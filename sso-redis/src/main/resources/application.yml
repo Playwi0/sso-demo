@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+dubbo:
+  application:
+    name: dubbo-boot-redis
+  registry:
+    id: zookeeper
+    address: zookeeper://127.0.0.1
+    port: 2181
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.palwyi0.ssoredis.service.impl
+
+
+spring:
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    timeout: 3000
+    password: 779244202
